@@ -85,12 +85,12 @@ Each leg has:
 ```mermaid
 graph TD;
     %% Power distribution
-    A[LiPo Battery] -->|Power| B1[DC-DC Buck Converter<br>5V for Pi]
+    A[4S 18650 LiPo Battery] -->|Power| B1[DC-DC Buck Converter<br>5V for Pi]
     A -->|Power| B2[DC-DC Buck Converter<br>6V for Servos]
 
     %% Power outputs
     B1 -->|5V Output| C[Raspberry Pi 5]
-    B2 -->|6V Output| F[12x MG996R Servos]
+    B2 -->|6V Output| F[12x TD-8125MG Servos]
 
     %% Pi peripherals
     C -->|USB| D[USB Microphone]
